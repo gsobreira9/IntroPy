@@ -47,12 +47,64 @@ def brincar_deplim(fim):
         else:
             print('{:0>3}'.format(numero))
 
+def exibir_dia_da_semana_if(numero):
+    print('Execução com IF')
+    if numero ==1:
+        print(' O dia é segunda')
+    elif numero == 2:
+        print('O dia é terça')
+    elif numero == 3:
+        print('O dia é quarta')
+    elif numero == 4:
+        print('O dia é quinta')
+    elif numero == 5:
+        print('O dia é sexta')
+    elif numero == 6:
+        print('O dia é sábado')
+    elif numero == 7:
+         print('O dia é domingo')
+    else:
+        print("Número de dia inválido.Digite um número de 1 a 7")
+
+'''
+def exibir_dia_da_semana_match(numero):
+    print("execução com MATCH")
+    match numero:
+        case 1:
+            print('O dia é segunda')
+            exit()
+        case 2:
+         print('O dia é terça')
+         exit()
+        case 3:
+            print('O dia é quarta')
+            exit()
+        case 4:
+            print('O dia é quinta')
+            exit()
+        case 5:
+                print('O dia é sexta')
+                exit()
+        case 6:
+            print('O dia é sábado')
+            exit()
+        case 7:
+            print('O dia é domingo')
+            exit()
+        case _:
+            print('Número de dia inválido.Digite um número de 1 a 7')
+'''
+def brincar_de_para_ou_continua():
+    resposta = 'C' #C  aqui significa que continua
+
+    while resposta == 'C' :
+            resposta = input("Digite P para parar ou C para continuar ")
+
+            print('Você decidiu parar com a brincadeira')
 
 
-## def contagem_regressiva(inicio, fim):
 
-
-# estrutura de identificação / execução do script
+        # estrutura de identificação / execução do script
 if __name__ == '__main__':
     print_hi('Gustavo')
 
@@ -76,3 +128,12 @@ if __name__ == '__main__':
 
     # brincar de Plim
     brincar_deplim(100)
+
+    # exemplo de dia da semana com if - elif - else
+    exibir_dia_da_semana_if(8)
+
+    # exemplo de dia da semana com match -case
+    #exibir_dia_da_semana_match(1)
+
+    # exemplo com while - para ou continua
+    brincar_de_para_ou_continua()
